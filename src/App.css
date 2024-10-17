@@ -1,0 +1,59 @@
+#root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#map-container {
+  height: 100%;
+  width: 100%;
+  /* temporarily set the background color so we can tell where the map container is positioned */
+  background-color: lightgrey;
+}
+
+.sidebar {
+  background-color: rgb(35 55 75 / 90%);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.reset-button {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  left: 12px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Style the popup container */
+.mapboxgl-popup-content {
+  background-color: #f9f9f9; /* Background color */
+  color: #333; /* Text color */
+  padding: 15px; /* Padding inside the popup */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Optional box shadow */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Style the popup tip (arrow) */
+.mapboxgl-popup-tip {
+  display: none; /* Optionally hide the tip for a cleaner look, or keep it if needed */
+}
+
+/* Style the popup close button */
+.mapboxgl-popup-close-button {
+  color: #000000; /* Change color of the close button */
+  top: 3px;
+  right: 3px;
+}
